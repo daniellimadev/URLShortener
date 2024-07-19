@@ -28,7 +28,7 @@ public class UrlService {
         Url url = new Url();
         url.setFullUrl(urlOriginal);
         url.setUrlShortened(generateUrlRandom());
-        url.setUrlCreatedIn(LocalDateTime.now().plusMinutes(1));
+        url.setUrlCreatedIn(LocalDateTime.now().plusMinutes(5));
         return urlRepository.save(url);
     }
 
